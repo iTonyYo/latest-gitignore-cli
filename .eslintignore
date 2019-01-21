@@ -1,0 +1,8 @@
+*-test.js
+
+esm/**
+
+.github/**
+.vscode/**
+scripts/**
+coverage/**

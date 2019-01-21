@@ -1,0 +1,143 @@
+{
+  "git.ignoreLimitWarning": true,
+  "terminal.integrated.rendererType": "canvas",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.fontFamily": "Hack",
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Hack",
+  "markdown.preview.fontSize": 12,
+  "files.autoSave": "onWindowChange",
+  "editor.cursorStyle": "line",
+  "editor.minimap.enabled": true,
+  "zenMode.restore": true,
+  "editor.letterSpacing": 1,
+  "editor.dragAndDrop": true,
+  "workbench.colorTheme": "Activate SCARLET protocol (beta)",
+  "workbench.iconTheme": "vscode-icons",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.har": true,
+    "**/.nyc_output": true,
+    "**/node_modules": true,
+    "**/data": true,
+    "**/dump.rdb": true
+  },
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.formatOnSave": false,
+  "terminal.integrated.scrollback": 500,
+  "terminal.integrated.confirmOnExit": true,
+  "editor.wordWrapColumn": 80,
+  "todohighlight.keywords": [
+    {
+      "text": "TODO:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px"
+    },
+    {
+      "text": "FIXME:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px"
+    },
+    {
+      "text": "PERFOMANCE:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#EA514E"
+    },
+    {
+      "text": "PENDING:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#005cc5"
+    },
+    {
+      "text": "WORKFLOW:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#2ed573"
+    },
+    {
+      "text": "USABILITY:",
+      "color": "#000",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#ced6e0"
+    },
+    {
+      "text": "EXPANDABILITY:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#2f3542"
+    },
+    {
+      "text": "LOGIC:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#B0B6BC"
+    },
+    {
+      "text": "DEBUG:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#B0B6BC"
+    },
+    {
+      "text": "QUESTION:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#fc8458"
+    },
+    {
+      "text": "DECISION",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#2ed573"
+    },
+    {
+      "text": "PROCESS",
+      "color": "#000",
+      "border": "1px solid #fff",
+      "borderRadius": "3px"
+    },
+    {
+      "text": "ASYNC PROCESSs",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#005cc5"
+    },
+    {
+      "text": "FINISH",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#2f3542"
+    },
+
+  ],
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.md"
+  ]
+}
