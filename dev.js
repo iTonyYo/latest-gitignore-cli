@@ -14,6 +14,6 @@ import gitignore from './src/gitignore';
       'Vim',
       'TortoiseGit',
     ],
-    '.',
+    '.vscode',
   );
 })();
