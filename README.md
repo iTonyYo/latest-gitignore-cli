@@ -7,6 +7,7 @@
 - [安装](#安装)
 - [使用](#使用)
     - [`latestGitignore(needs, to)`](#latestgitignoreneeds-to)
+    - [命令行](#命令行)
 - [相关](#相关)
 - [参与开发](#参与开发)
 - [贡献指南](#贡献指南)
@@ -62,6 +63,29 @@ import latestGitignore from '@oopsunome/latest-gitignore';
    * }
    */
 })();
+```
+
+#### 命令行
+
+```
+$ 使用方式
+    $ latest-gitignore <主题> <...> 选项 [...]
+
+  选项
+    --out, -o, '.gitignore' 文件存储位置，默认：'process.cwd()'
+
+  示例
+    $ latest-gitignore macOS Windows Linux Node -o .
+```
+
+在全局系统环境下使用的话，需要先全局安装 [@oopsunome/latest-gitignore][@oopsunome/latest-gitignore]，
+
+```shell
+# 使用 NPM
+$ npm i -g @oopsunome/latest-gitignore
+
+# 使用 Yarn
+$ yarn global add @oopsunome/latest-gitignore
 ```
 
 ## 相关

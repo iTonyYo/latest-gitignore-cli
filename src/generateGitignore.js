@@ -38,18 +38,25 @@ export default async (needs, to) => {
     const pCacheGet = promisify(diskCache.get);
     const pCacheSet = promisify(diskCache.set);
 
+    const savingDir = resolveRoot('.gitignore', to);
+    log(`保存至 ${savingDir}`);
+
     const cacheDownloadList = await pCacheGet('allDownloadUrls');
 
     if (isEmpty(cacheDownloadList)) {
       log('远程获取下载列表');
 
       const allDownloadUrls = await getTemplatesAllUrls();
+      const targets = await getTemplatesNeededUrls(
+        allDownloadUrls,
+        needs,
+      );
+      log(`待下载 ${targets.length} 个模板`);
+
       const sc = pCacheSet('allDownloadUrls', allDownloadUrls);
       const wf = saveFile(
-        await getTemplatesRemote(
-          await getTemplatesNeededUrls(allDownloadUrls, needs)
-        ),
-        resolveRoot('.gitignore', to),
+        await getTemplatesRemote(targets),
+        savingDir,
       );
 
       await sc;
@@ -60,12 +67,16 @@ export default async (needs, to) => {
       log('从缓存中获取下载列表');
 
       const allDownloadUrls = await pCacheGet('allDownloadUrls');
+      const targets = await getTemplatesNeededUrls(
+        allDownloadUrls,
+        needs,
+      );
+      log(`待下载 ${targets.length} 个模板`);
+
       await saveFile(
-        await getTemplatesRemote(
-          await getTemplatesNeededUrls(allDownloadUrls, needs)
-        ),
-        resolveRoot('.gitignore', to),
-      )
+        await getTemplatesRemote(targets),
+        savingDir,
+      );
     }
   } catch (error) {
     throw error;

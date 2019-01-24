@@ -5,6 +5,9 @@
   "main": "esm/latestGitignore.js",
   "scripts": {
     "start": "DEBUG=LG:* npx babel-node ./dev",
+    "cli": "DEBUG=LG:* npx babel-node ./src/cli macOS Windows Linux Node VisualStudioCode SublimeText CVS Diff Vim TortoiseGit -o .",
+    "build": "npx babel-node ./scripts/clean-built && npx babel-node ./scripts/build",
+    "lint": "npx eslint --cache ./src/**/*.js",
     "changelog": "npx auto-changelog -p"
   },
   "engines": {
@@ -30,6 +33,7 @@
     "lodash": "^4.17.11",
     "meow": "^5.0.0",
     "p-map": "^2.0.0",
+    "redent": "^2.0.0",
     "update-notifier": "^2.5.0",
     "write-file-atomic": "^2.4.2"
   },
