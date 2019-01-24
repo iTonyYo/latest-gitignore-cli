@@ -3,4 +3,5 @@ import { resolveApp } from './paths';
 
 trash([
   resolveApp('.eslintcache'),
+  resolveApp('.cache'),
 ]);
