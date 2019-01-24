@@ -1,5 +1,3 @@
-你想提出一个新功能还是一个问题？
-
 目前它的情况是怎样的？
 
 如果现在的情况是一个问题，请借助 [JSFiddle](https://jsfiddle.net) 提供重现该问题的最小实现。基于这份 [JSFiddle 模板](https://jsfiddle.net/iTonyYo/uch1xu3u/) 也许可以为你避免一些繁琐的工作。
