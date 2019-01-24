@@ -1,83 +1,33 @@
-import { promisify } from 'util';
+import { realpathSync } from 'fs';
 
-import join from 'lodash/join';
-import writeFileAtomic from 'write-file-atomic';
-import isNil from 'lodash/isNil';
-import includes from 'lodash/includes';
-import find from 'lodash/find';
-import pMap from 'p-map';
+import isReachable from 'is-reachable';
 
-import getAllDownloadUrls from './getAllDownloadUrls';
-import batchGot from './batchGot';
-import resolveRoot from './resolveRoot';
-import initFsCache from './initFsCache';
+import dirExists from './dirExists';
+import generateGitignore from './generateGitignore';
 
-const getUrls = async (allUrls, ignores) => {
+/**
+ * latestGitignore(needs, to);
+ *
+ * @param {Array} needs - 需被 Git 忽略的内容主题
+ * @param {String} to - `.gitignore` 文件存储位置
+ */
+export default async (needs, to) => {
   try {
-    return await pMap(
-      ignores,
-      async ign => find(
-        allUrls,
-        dl => includes(dl, `${ign}.gitignore`),
-      ),
-      { concurrency: 8 },
-    );
-  } catch (err) {
-    throw err;
+    if (!(await dirExists(to))) {
+      throw Error('保存位置必须有效');
+    }
+
+    if (!(await isReachable('https://api.github.com'))) {
+      throw Error('访问 `github/gitignore` 项目时出现故障');
+    }
+
+    await generateGitignore(needs, to);
+
+    return {
+      message: '成功添加 `.gitignore` 文件',
+      out: realpathSync(to),
+    };
+  } catch (error) {
+    throw error;
   }
 };
-
-const latestGitignore = async (ignores, to) => {
-  const diskCache = await initFsCache();
-  const pCacheGet = promisify(diskCache.get);
-  const pCacheSet = promisify(diskCache.set);
-
-  const cache = await pCacheGet('allDownloadUrls');
-
-  if (isNil(cache)) {
-    const allDownloadUrls = await getAllDownloadUrls();
-
-    const sc = pCacheSet('allDownloadUrls', allDownloadUrls);
-    const wf = writeFileAtomic(
-      resolveRoot('.gitignore', to),
-      join(
-        await batchGot(
-          await getUrls(allDownloadUrls, ignores),
-          { concurrency: 8 },
-        ),
-        '\n\n\n',
-      ),
-      {},
-      (err) => {
-        if (err) {
-          throw err;
-        }
-      },
-    );
-
-    await sc;
-    await wf;
-  }
-
-  if (!isNil(cache)) {
-    const allDownloadUrls = await pCacheGet('allDownloadUrls');
-    await writeFileAtomic(
-      resolveRoot('.gitignore', to),
-      join(
-        await batchGot(
-          await getUrls(allDownloadUrls, ignores),
-          { concurrency: 8 },
-        ),
-        '\n\n\n',
-      ),
-      {},
-      (err) => {
-        if (err) {
-          throw err;
-        }
-      },
-    );
-  }
-};
-
-export default latestGitignore;

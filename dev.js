@@ -1,7 +1,7 @@
-import gitignore from './src/gitignore';
+import latestGitignore from './src/latestGitignore';
 
 (async () => {
-  await gitignore(
+  const generated = await latestGitignore(
     [
       'macOS',
       'Windows',
@@ -16,4 +16,6 @@ import gitignore from './src/gitignore';
     ],
     '.vscode',
   );
+
+  console.info(generated);
 })();
