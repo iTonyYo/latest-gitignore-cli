@@ -23,6 +23,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
       选项
         --out, -o, '.gitignore' 文件存储位置，默认：'process.cwd()'
+        --version, -V, 查看版本号
 
       示例
         $ latest-gitignore macOS Windows Linux Node -o .
@@ -35,6 +36,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         help: {
           type: 'boolean',
           alias: 'h'
+        },
+        version: {
+          type: 'boolean',
+          alias: 'V'
         }
       }
     });

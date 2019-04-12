@@ -16,6 +16,7 @@ import latestGitignore from './latestGitignore';
 
       选项
         --out, -o, '.gitignore' 文件存储位置，默认：'process.cwd()'
+        --version, -V, 查看版本号
 
       示例
         $ latest-gitignore macOS Windows Linux Node -o .
@@ -28,6 +29,10 @@ import latestGitignore from './latestGitignore';
         help: {
           type: 'boolean',
           alias: 'h',
+        },
+        version: {
+          type: 'boolean',
+          alias: 'V',
         },
       },
     });
