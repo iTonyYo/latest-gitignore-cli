@@ -1,7 +1,7 @@
 "module name","license","repository"
 "@mrmlnc/readdir-enhanced@2.2.1","MIT","https://github.com/bigstickcarpet/readdir-enhanced"
 "@nodelib/fs.stat@1.1.3","MIT","https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.stat"
-"@oopsunome/latest-gitignore@1.0.0","MIT","https://github.com/iTonyYo/latest-gitignore"
+"@oopsunome/latest-gitignore@1.0.1","MIT","https://github.com/iTonyYo/latest-gitignore"
 "@sindresorhus/is@0.14.0","MIT","https://github.com/sindresorhus/is"
 "@szmarczak/http-timer@1.1.2","MIT","https://github.com/szmarczak/http-timer"
 "aggregate-error@1.0.0","MIT","https://github.com/sindresorhus/aggregate-error"

@@ -82,7 +82,7 @@
 "@babel/traverse@7.4.3","MIT","https://github.com/babel/babel/tree/master/packages/babel-traverse"
 "@babel/types@7.3.0","MIT","https://github.com/babel/babel/tree/master/packages/babel-types"
 "@babel/types@7.4.0","MIT","https://github.com/babel/babel/tree/master/packages/babel-types"
-"@oopsunome/latest-gitignore@1.0.0","MIT","https://github.com/iTonyYo/latest-gitignore"
+"@oopsunome/latest-gitignore@1.0.1","MIT","https://github.com/iTonyYo/latest-gitignore"
 "@samverschueren/stream-to-observable@0.3.0","MIT","https://github.com/SamVerschueren/stream-to-observable"
 "@sindresorhus/df@1.0.1","MIT","https://github.com/sindresorhus/df"
 "@sindresorhus/df@2.1.0","MIT","https://github.com/sindresorhus/df"
