@@ -1,5 +1,14 @@
 # [`@oopsunome/latest-gitignore`][@oopsunome/latest-gitignore] 更新日志
 
+## [v1.0.2](https://github.com/iTonyYo/latest-gitignore/compare/v1.0.1...v1.0.2) - 2019-06-21
+
+#### 提交
+
+- [[`0d5b669`](https://github.com/iTonyYo/latest-gitignore/commit/0d5b669cebf61a51427496d8a80b44865bba4578)] 依赖: :package: 升级依赖
+- [[`78eeea4`](https://github.com/iTonyYo/latest-gitignore/commit/78eeea4f460c79ee9ea26277c4d8dda8e0d50244)] 配置: :wrench: 将证书列表迁移至 `./doc` 目录下
+- [[`79baa27`](https://github.com/iTonyYo/latest-gitignore/commit/79baa27cf974f7d7aec40aa56b3b8f4a3669675c)] 工作流: :railway_track: 更新 `.gitignore`
+- [[`cd59c12`](https://github.com/iTonyYo/latest-gitignore/commit/cd59c122892426ff78e2f0ae3ee2bee23f1287a0)] 文档: :memo: 更新 README.md
+- [[`f26a755`](https://github.com/iTonyYo/latest-gitignore/commit/f26a755134c4d4dcee32bd7afa1eca1708f8a874)] 文档: :memo: 添加软件包质量徽章
 ## [v1.0.1](https://github.com/iTonyYo/latest-gitignore/compare/v1.0.0...v1.0.1) - 2019-04-12
 
 #### 提交
@@ -7,6 +16,7 @@
 - [[`a61fb69`](https://github.com/iTonyYo/latest-gitignore/commit/a61fb693dcfbcf57624b0781ea508ebf981ea091)] 依赖: :package: 升级依赖
 - [[`5be22ef`](https://github.com/iTonyYo/latest-gitignore/commit/5be22ef5c275ff4512a6fbd2cd088d64eb74f4a0)] 文档: :memo: 将 Git 提交指南从 CONTRIBUTING.md 中分离到 `./doc` 目录下
 - [[`bde756e`](https://github.com/iTonyYo/latest-gitignore/commit/bde756e94f88e9c5141465952721e72811324257)] 工作流: :railway_track: 更新 VS Code 编辑器配置
+- [[`b2b647b`](https://github.com/iTonyYo/latest-gitignore/commit/b2b647b07c1cb8902c57ede44ba4aa6b6cadfb4e)] 发版: :bookmark: v1.0.1
 - [[`c4fc0f2`](https://github.com/iTonyYo/latest-gitignore/commit/c4fc0f244297d855a3606107c2bfc3bde693cabb)] 功能: :gear: 支持传递 `-V` 参数获取版本号
 - [[`648d543`](https://github.com/iTonyYo/latest-gitignore/commit/648d543a5e8766b8c214c78139f89bac776e3232)] 工作流: :railway_track: 增加若干提交主题
 ## v1.0.0 - 2019-01-24

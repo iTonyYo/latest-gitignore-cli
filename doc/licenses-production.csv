@@ -2,7 +2,7 @@
 "@nodelib/fs.scandir@2.0.1","MIT","https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.scandir"
 "@nodelib/fs.stat@2.0.1","MIT","https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.stat"
 "@nodelib/fs.walk@1.1.1","MIT","https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk"
-"@oopsunome/latest-gitignore@1.0.1","MIT","https://github.com/iTonyYo/latest-gitignore"
+"@oopsunome/latest-gitignore@1.0.2","MIT","https://github.com/iTonyYo/latest-gitignore"
 "@sindresorhus/is@0.14.0","MIT","https://github.com/sindresorhus/is"
 "@szmarczak/http-timer@1.1.2","MIT","https://github.com/szmarczak/http-timer"
 "aggregate-error@3.0.0","MIT","https://github.com/sindresorhus/aggregate-error"
