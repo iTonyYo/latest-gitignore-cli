@@ -1,3 +1,5 @@
+[![Package Quality](https://npm.packagequality.com/shield/@oopsunome/latest-gitignore.svg)](https://packagequality.com/#?package=@oopsunome/latest-gitignore)
+
 # `@oopsunome/latest-gitignore`
 
 添加 / 更新 `.gitignore`。直接从 [`github/gitignore`](https://github.com/github/gitignore) 项目 `master` 分支获取数据，而非 [`gitignore.io`](https://www.gitignore.io/)。
@@ -56,7 +58,7 @@ import latestGitignore from '@oopsunome/latest-gitignore';
 
   /**
    * 输出:
-   * 
+   *
    * {
    *   out: '/Users/username/git-project',
    *   message: '成功添加 `.gitignore` 文件'
