@@ -87,5 +87,56 @@
   "publishConfig": {
     "access": "public"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "10.13.0"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "eslintIgnore": [
+    "*-test.js",
+    "esm/**",
+    ".github/**",
+    ".vscode/**",
+    "scripts/**",
+    "coverage/**"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "globals": {
+      "require": true,
+      "process": true,
+      "module": true
+    },
+    "extends": [
+      "airbnb-base"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+      "no-console": 0
+    }
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "changelog-template.hbs",
+    "unreleased": true,
+    "commitLimit": false,
+    "includeBranch": [
+      "master",
+      "develop"
+    ]
+  }
 }
