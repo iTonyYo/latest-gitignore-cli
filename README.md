@@ -1,5 +1,3 @@
-[![Package Quality](https://npm.packagequality.com/shield/@oopsunome/latest-gitignore.svg)](https://packagequality.com/#?package=@oopsunome/latest-gitignore)
-
 # `@oopsunome/latest-gitignore`
 
 添加 / 更新 `.gitignore`。直接从 [`github/gitignore`](https://github.com/github/gitignore) 项目 `master` 分支获取数据，而非 [`gitignore.io`](https://www.gitignore.io/)。
@@ -136,10 +134,10 @@ yarn test
 - [ ] 捆绑 [Git 倒钩][Git倒钩]；
 - [X] ESlint 检测；
 - [X] 生成所有依赖的开源证书；
-- [ ] 更新日志；
+- [X] 更新日志；
 - [ ] 谁在使用 [`@oopsunome/latest-gitignore`][@oopsunome/latest-gitignore]?
 - [ ] 编写 [发布流程指南][发布流程指南]；
-- [ ] 编写 [Git 指南][Git指南]；
+- [X] 编写 [Git 指南][Git指南]；
 - [ ] 编写 [命名指南][命名指南]；
 - [ ] 编写 [版本指南][版本指南]；
 - [ ] 完善 [贡献指南][贡献指南]；
