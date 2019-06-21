@@ -1,10 +1,12 @@
 import trash from 'trash';
-import { resolveApp } from './paths';
+import { resolveCwd } from './paths';
 
 trash([
-  resolveApp('yarn-error.log'),
-  resolveApp('.nyc_output'),
-  resolveApp('coverage'),
-  resolveApp('licenses-development.csv '),
-  resolveApp('licenses-production.csv'),
+  resolveCwd('yarn-error.log'),
+  resolveCwd('.nyc_output'),
+  resolveCwd('coverage'),
+  resolveCwd('licenses-development.csv '),
+  resolveCwd('licenses-production.csv'),
+  resolveCwd('doc/licenses-development.csv '),
+  resolveCwd('doc/licenses-production.csv'),
 ]);

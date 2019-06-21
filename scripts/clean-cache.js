@@ -1,7 +1,7 @@
 import trash from 'trash';
-import { resolveApp } from './paths';
+import { resolveCwd } from './paths';
 
 trash([
-  resolveApp('.eslintcache'),
-  resolveApp('.cache'),
+  resolveCwd('.eslintcache'),
+  resolveCwd('.cache'),
 ]);

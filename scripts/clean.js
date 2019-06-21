@@ -1,8 +1,8 @@
 import execa from 'execa';
-import { resolveApp } from './paths';
+import { resolveCwd } from './paths';
 
 (async () => {
-  const scriptsDir = resolveApp('scripts');
+  const scriptsDir = resolveCwd('scripts');
 
   const cleanReports = execa('npx', [
     'babel-node',

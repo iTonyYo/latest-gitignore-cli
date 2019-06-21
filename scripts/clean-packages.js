@@ -1,9 +1,9 @@
 import trash from 'trash';
-import { resolveApp } from './paths';
+import { resolveCwd } from './paths';
 
 trash([
-  resolveApp('yarn.lock'),
-  resolveApp('package-lock.json'),
+  resolveCwd('yarn.lock'),
+  resolveCwd('package-lock.json'),
 
-  resolveApp('node_modules'),
+  resolveCwd('node_modules'),
 ])

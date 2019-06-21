@@ -7,7 +7,7 @@ import makeDir from 'make-dir';
 import writeFileAtomic from 'write-file-atomic';
 import chalk from 'chalk';
 
-import { appDirectory } from './paths';
+import { appDirectory, docs } from './paths';
 
 /**
  * 异步保存报告，
@@ -57,7 +57,7 @@ licenseChecker.init({
   } else {
     saveCSV({
       csv     : data,
-      to      : appDirectory,
+      to      : docs,
       fileName: 'licenses-development.csv',
     });
   }
@@ -76,7 +76,7 @@ licenseChecker.init({
   } else {
     saveCSV({
       csv     : data,
-      to      : appDirectory,
+      to      : docs,
       fileName: 'licenses-production.csv',
     });
   }

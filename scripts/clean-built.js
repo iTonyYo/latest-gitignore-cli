@@ -1,6 +1,6 @@
 import trash from 'trash';
-import { resolveApp } from './paths';
+import { resolveCwd } from './paths';
 
 trash([
-  resolveApp('esm'),
+  resolveCwd('esm'),
 ]);

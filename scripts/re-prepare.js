@@ -1,8 +1,8 @@
 import Listr from 'listr';
 import execa from 'execa';
-import { resolveApp } from './paths';
+import { resolveCwd } from './paths';
 
-const scriptsDir = resolveApp('scripts');
+const scriptsDir = resolveCwd('scripts');
 
 const tasks = new Listr([
   {
