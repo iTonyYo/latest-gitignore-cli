@@ -11,7 +11,9 @@
     "license": "npx babel-node ./scripts/license",
     "reprepare": "npx babel-node ./scripts/re-prepare",
     "lint": "npx eslint --cache ./src/**/*.js",
-    "changelog": "npx auto-changelog -p"
+    "changelog": "npx auto-changelog -p",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=10.13.0"
@@ -38,7 +40,8 @@
     "p-map": "^2.1.0",
     "redent": "^3.0.0",
     "update-notifier": "^3.0.0",
-    "write-file-atomic": "^3.0.0"
+    "write-file-atomic": "^3.0.0",
+    "snyk": "^1.189.0"
   },
   "private": false,
   "devDependencies": {
@@ -138,5 +141,6 @@
       "master",
       "develop"
     ]
-  }
+  },
+  "snyk": true
 }
