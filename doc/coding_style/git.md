@@ -119,7 +119,13 @@ git commit -m '新功能: :tada: 一个新功能' -m '初始提交首页'
 **架构**
 ```shell
 # 架构的修改，无论工程亦或是核心业务。
-架构: :clapper::building_construction:
+架构: :building_construction:
+```
+
+**重构**
+```shell
+# 大范围架构的修改，无论工程亦或是核心业务。
+重构: :recycle:
 ```
 
 **可访问性**
@@ -146,13 +152,25 @@ git commit -m '新功能: :tada: 一个新功能' -m '初始提交首页'
 监控: :chart_with_upwards_trend:
 ```
 
+**依赖**
+```shell
+# 移除依赖
+依赖: :heavy_minus_sign:
+
+# 新增依赖
+依赖: :heavy_plus_sign:
+
+# 升级依赖
+依赖: :arrow_up:
+
+# 降级依赖
+依赖: :arrow_down:
+```
+
 **工程**
 ```shell
 # 增 / 删 / 改 / 弃用工作流（自动化管道、构建指令）
 工作流: :railway_track:
-
-# 增 / 删 / 改 / 弃用依赖
-依赖: :package:
 
 # 对格式、标点符号、命名等的修改。
 格式: :art:
