@@ -4,17 +4,26 @@
 
 ## 目录
 
-- [安装](#安装)
-- [使用](#使用)
-    - [`latestGitignore(needs, to)`](#latestgitignoreneeds-to)
-    - [命令行](#命令行)
+- [`latestGitignore(needs, to)`](#latestgitignoreneeds-to)
+    - [安装](#安装)
+    - [使用](#使用)
+- [命令行](#命令行)
+    - [安装](#安装-1)
+    - [使用](#使用-1)
 - [相关](#相关)
 - [参与开发](#参与开发)
 - [贡献指南](#贡献指南)
 - [证书](#证书)
-- [待办](#待办)
 
-## 安装
+## `latestGitignore(needs, to)`
+
+- `needs` {Array | String} 需被 Git 忽略的内容的主题
+- `to` {String} `.gitignore` 文件存储位置
+- 返回: {Object}
+  - `out` {String} 生成后的 `.gitignore` 所在位置
+  - `message` {String} 生成结果简述
+
+#### 安装
 
 ```shell
 # 使用 NPM
@@ -24,15 +33,7 @@ $ npm i @oopsunome/latest-gitignore
 $ yarn add @oopsunome/latest-gitignore
 ```
 
-## 使用
-
-#### `latestGitignore(needs, to)`
-
-- `needs` {Array | String} 需被 Git 忽略的内容的主题
-- `to` {String} `.gitignore` 文件存储位置
-- 返回: {Object}
-  - `out` {String} 生成后的 `.gitignore` 所在位置
-  - `message` {String} 生成结果简述
+#### 使用
 
 ```javascript
 import latestGitignore from '@oopsunome/latest-gitignore';
@@ -65,7 +66,24 @@ import latestGitignore from '@oopsunome/latest-gitignore';
 })();
 ```
 
-#### 命令行
+## 命令行
+
+- [X] 支持通过配置文件自定义 [`github/gitignore`][github/gitignore] 模板，减少多项目下重复操作;
+- [X] 从 [`github/gitignore`][github/gitignore] 实时下载，保证生成的 `.gitignore` 一定是最新的;
+
+#### 安装
+
+在全局系统环境下使用的话，需要先全局安装 [@oopsunome/latest-gitignore][@oopsunome/latest-gitignore]，
+
+```shell
+# 使用 NPM
+$ npm i -g @oopsunome/latest-gitignore
+
+# 使用 Yarn
+$ yarn global add @oopsunome/latest-gitignore
+```
+
+#### 使用
 
 ```
 $ 使用方式
@@ -76,16 +94,6 @@ $ 使用方式
 
   示例
     $ latest-gitignore macOS Windows Linux Node -o .
-```
-
-在全局系统环境下使用的话，需要先全局安装 [@oopsunome/latest-gitignore][@oopsunome/latest-gitignore]，
-
-```shell
-# 使用 NPM
-$ npm i -g @oopsunome/latest-gitignore
-
-# 使用 Yarn
-$ yarn global add @oopsunome/latest-gitignore
 ```
 
 ## 相关
@@ -127,45 +135,8 @@ yarn test
 
 [`@oopsunome/latest-gitignore`][@oopsunome/latest-gitignore] 获得了 MIT 许可，仔细查阅 [LICENSE.md][证书] 以了解详情。
 
-## 待办
-
-- [X] 开发的时候使用 `ES 6/7`，支持构建 `ES 5` 模式的模块；
-- [ ] 功能测试；
-- [ ] 捆绑 [Git 倒钩][Git倒钩]；
-- [X] ESlint 检测；
-- [X] 生成所有依赖的开源证书；
-- [X] 更新日志；
-- [ ] 谁在使用 [`@oopsunome/latest-gitignore`][@oopsunome/latest-gitignore]?
-- [ ] 编写 [发布流程指南][发布流程指南]；
-- [X] 编写 [Git 指南][Git指南]；
-- [ ] 编写 [命名指南][命名指南]；
-- [ ] 编写 [版本指南][版本指南]；
-- [ ] 完善 [贡献指南][贡献指南]；
-- [ ] 文档：[编码风格指南][编码风格指南]；
-- [ ] 使用 [David DM][DavidDM] 实现 `依赖是否最新` 检测；
-- [ ] 使用 [Travis CI][TravisCI] 实现持续集成；
-- [ ] 使用 [Coveralls][Coveralls] 可视化测试用例覆盖率；
-- [ ] 使用 [Codacy][Codacy] 实现代码质量检测；
-- [ ] 编写 [开发环境指南][SETUP.md]；
-- [ ] 在什么场景下使用 [`@oopsunome/latest-gitignore`][@oopsunome/latest-gitignore]?
-- [ ] 文档：在哪里可以获得更多帮助？
-- [ ] 文档：设计思想；
-- [ ] 文档：维护策略；
-- [ ] 性能测试；
-
-[编码风格指南]: #
-[版本指南]: #
-[命名指南]: #
-[Git指南]: #
-[发布流程指南]: #
-[Git倒钩]: https://github.com/typicode/husky
-[DavidDM]: https://david-dm.org/
-[TravisCI]: https://travis-ci.org/
-[Coveralls]: https://coveralls.io/
-[Codacy]: https://www.codacy.com/
 [贡献指南]: https://github.com/iTonyYo/latest-gitignore/blob/master/CONTRIBUTING.md
 [证书]: https://github.com/iTonyYo/latest-gitignore/blob/master/LICENSE.md
-[Node]: https://nodejs.org/
 [@oopsunome/latest-gitignore]: https://github.com/iTonyYo/latest-gitignore
 [SETUP.md]: #
 [github/gitignore]: https://github.com/github/gitignore
