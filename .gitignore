@@ -237,3 +237,13 @@ tags
 
 # Project-level settings
 /.tgitconfig
+
+
+
+*.patch
+*.diff
+
+
+
+*.orig
+*.rej
