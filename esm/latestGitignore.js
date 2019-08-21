@@ -26,26 +26,22 @@ const log = (0, _debug.default)('LG:log');
  */
 
 var _default = async (needs, to) => {
-  try {
-    if (!(await (0, _dirExists.default)(to))) {
-      throw Error('保存位置必须有效');
-    }
-
-    log('保存位置有效');
-
-    if (!(await (0, _isReachable.default)('https://api.github.com'))) {
-      throw Error('访问 `github/gitignore` 项目时出现故障');
-    }
-
-    log('可以访问 `github/gitignore` 项目');
-    await (0, _generateGitignore.default)(needs, to);
-    return {
-      message: '成功添加 `.gitignore` 文件',
-      out: (0, _fs.realpathSync)(to)
-    };
-  } catch (error) {
-    throw error;
+  if (!(await (0, _dirExists.default)(to))) {
+    throw Error('保存位置必须有效');
   }
+
+  log('保存位置有效');
+
+  if (!(await (0, _isReachable.default)('https://api.github.com'))) {
+    throw Error('访问 `github/gitignore` 项目时出现故障');
+  }
+
+  log('可以访问 `github/gitignore` 项目');
+  await (0, _generateGitignore.default)(needs, to);
+  return {
+    message: '成功添加 `.gitignore` 文件',
+    out: (0, _fs.realpathSync)(to)
+  };
 };
 
 exports.default = _default;

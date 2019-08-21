@@ -10,15 +10,11 @@ var _writeFileAtomic = _interopRequireDefault(require("write-file-atomic"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const saveFile = async (data, to) => {
-  try {
-    await (0, _writeFileAtomic.default)(to, data, {}, error => {
-      if (error) {
-        throw error;
-      }
-    });
-  } catch (error) {
-    throw error;
-  }
+  await (0, _writeFileAtomic.default)(to, data, {}, error => {
+    if (error) {
+      throw error;
+    }
+  });
 };
 
 var _default = saveFile;

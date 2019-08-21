@@ -15,24 +15,20 @@ const log = debug('LG:log');
  * @param {String} to - `.gitignore` 文件存储位置
  */
 export default async (needs, to) => {
-  try {
-    if (!(await dirExists(to))) {
-      throw Error('保存位置必须有效');
-    }
-    log('保存位置有效');
-
-    if (!(await isReachable('https://api.github.com'))) {
-      throw Error('访问 `github/gitignore` 项目时出现故障');
-    }
-    log('可以访问 `github/gitignore` 项目');
-
-    await generateGitignore(needs, to);
-
-    return {
-      message: '成功添加 `.gitignore` 文件',
-      out: realpathSync(to),
-    };
-  } catch (error) {
-    throw error;
+  if (!(await dirExists(to))) {
+    throw Error('保存位置必须有效');
   }
+  log('保存位置有效');
+
+  if (!(await isReachable('https://api.github.com'))) {
+    throw Error('访问 `github/gitignore` 项目时出现故障');
+  }
+  log('可以访问 `github/gitignore` 项目');
+
+  await generateGitignore(needs, to);
+
+  return {
+    message: '成功添加 `.gitignore` 文件',
+    out: realpathSync(to),
+  };
 };

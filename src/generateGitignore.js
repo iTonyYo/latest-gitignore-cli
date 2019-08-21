@@ -1,8 +1,8 @@
 import { promisify } from 'util';
 
-import isEmpty from 'lodash/isEmpty';
 import debug from 'debug';
 
+import isEmpty from './utilities/isEmpty';
 import initFsCache from './initFsCache';
 import getTemplatesAllUrls from './getTemplatesAllUrls';
 import getTemplatesNeededUrls from './getTemplatesNeededUrls';
@@ -33,52 +33,48 @@ const log = debug('LG:log');
  * @param {String} to - `.gitignore` 文件存储位置
  */
 export default async (needs, to) => {
-  try {
-    const diskCache = await initFsCache();
-    const pCacheGet = promisify(diskCache.get);
-    const pCacheSet = promisify(diskCache.set);
+  const diskCache = await initFsCache();
+  const pCacheGet = promisify(diskCache.get);
+  const pCacheSet = promisify(diskCache.set);
 
-    const savingDir = resolveRoot('.gitignore', to);
-    log(`保存至 ${savingDir}`);
+  const savingDir = resolveRoot('.gitignore', to);
+  log(`保存至 ${savingDir}`);
 
-    const cacheDownloadList = await pCacheGet('allDownloadUrls');
+  const cacheDownloadList = await pCacheGet('allDownloadUrls');
 
-    if (isEmpty(cacheDownloadList)) {
-      log('远程获取下载列表');
+  if (isEmpty(cacheDownloadList)) {
+    log('远程获取下载列表');
 
-      const allDownloadUrls = await getTemplatesAllUrls();
-      const targets = await getTemplatesNeededUrls(
-        allDownloadUrls,
-        needs,
-      );
-      log(`待下载 ${targets.length} 个模板`);
+    const allDownloadUrls = await getTemplatesAllUrls();
+    const targets = await getTemplatesNeededUrls(
+      allDownloadUrls,
+      needs,
+    );
+    log(`待下载 ${targets.length} 个模板`);
 
-      const sc = pCacheSet('allDownloadUrls', allDownloadUrls);
-      const wf = saveFile(
-        await getTemplatesRemote(targets),
-        savingDir,
-      );
+    const sc = pCacheSet('allDownloadUrls', allDownloadUrls);
+    const wf = saveFile(
+      await getTemplatesRemote(targets),
+      savingDir,
+    );
 
-      await sc;
-      await wf;
-    }
+    await sc;
+    await wf;
+  }
 
-    if (!isEmpty(cacheDownloadList)) {
-      log('从缓存中获取下载列表');
+  if (!isEmpty(cacheDownloadList)) {
+    log('从缓存中获取下载列表');
 
-      const allDownloadUrls = await pCacheGet('allDownloadUrls');
-      const targets = await getTemplatesNeededUrls(
-        allDownloadUrls,
-        needs,
-      );
-      log(`待下载 ${targets.length} 个模板`);
+    const allDownloadUrls = await pCacheGet('allDownloadUrls');
+    const targets = await getTemplatesNeededUrls(
+      allDownloadUrls,
+      needs,
+    );
+    log(`待下载 ${targets.length} 个模板`);
 
-      await saveFile(
-        await getTemplatesRemote(targets),
-        savingDir,
-      );
-    }
-  } catch (error) {
-    throw error;
+    await saveFile(
+      await getTemplatesRemote(targets),
+      savingDir,
+    );
   }
 };

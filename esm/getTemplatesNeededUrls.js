@@ -7,20 +7,13 @@ exports.default = void 0;
 
 var _pMap = _interopRequireDefault(require("p-map"));
 
-var _find = _interopRequireDefault(require("lodash/find"));
-
-var _includes = _interopRequireDefault(require("lodash/includes"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const getTemplatesNeededUrls = async (supplies, needs) => {
-  try {
-    return await (0, _pMap.default)(needs, async ign => (0, _find.default)(supplies, dl => (0, _includes.default)(dl, `${ign}.gitignore`)), {
-      concurrency: 8
-    });
-  } catch (err) {
-    throw err;
-  }
+  const tpls = await (0, _pMap.default)(needs, async ign => supplies.find(dl => dl.includes(`${ign}.gitignore`)), {
+    concurrency: 8
+  });
+  return tpls;
 };
 
 var _default = getTemplatesNeededUrls;
