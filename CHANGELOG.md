@@ -1,14 +1,36 @@
 # [`@oopsunome/latest-gitignore`][@oopsunome/latest-gitignore] 更新日志
 
+## [v1.1.0](https://github.com/iTonyYo/latest-gitignore/compare/v1.0.2...v1.1.0) - 2019-08-21
+
+### 混合
+
+- [[`#5`](https://github.com/iTonyYo/latest-gitignore/pull/5)] [Snyk] Fix for 1 vulnerable dependencies
+- [[`#4`](https://github.com/iTonyYo/latest-gitignore/pull/4)] [Snyk] Fix for 1 vulnerable dependencies
+
+#### 提交
+
+- [[`a06b76d`](https://github.com/iTonyYo/latest-gitignore/commit/a06b76d42144a2fe48c1216a5d9ff028b1cc4796)] 依赖: :package: 升级依赖
+- [[`9908998`](https://github.com/iTonyYo/latest-gitignore/commit/9908998d679628213849b647be03d7842dd68a48)] 依赖: :arrow_up: 更新依赖
+- [[`31d9328`](https://github.com/iTonyYo/latest-gitignore/commit/31d93280132578e752a8c29cab052f51ab52feee)] 重构: :recycle: OO 化 `./src/cli.js` && 优选原生工具函数
+- [[`f8846fc`](https://github.com/iTonyYo/latest-gitignore/commit/f8846fca65806c9c959c112a55d11eb1c4189aa9)] 文档: :memo: 更新 README.md
+- [[`5281729`](https://github.com/iTonyYo/latest-gitignore/commit/528172908e58ec8741af8fbec4fa998376251f4d)] 工作流: :railway_track: 更新 `yarn cli` 指令
+- [[`69b1c24`](https://github.com/iTonyYo/latest-gitignore/commit/69b1c24c37dec070f5c93d75ad075e896f824748)] 文档: :memo: 更新 `git` 提交指南
+- [[`ebb135e`](https://github.com/iTonyYo/latest-gitignore/commit/ebb135e706c3db384ebdec5d806c250abe75bbff)] 配置: :wrench: 新增 `Code Climate` 配置
+- [[`19db5cf`](https://github.com/iTonyYo/latest-gitignore/commit/19db5cf9c980fc0620f1c8cf597c06c6775a7062)] 配置: :wrench: 更新 `.gitignore` 配置
+- [[`fc97b57`](https://github.com/iTonyYo/latest-gitignore/commit/fc97b572c46044298dbf0f505d44d3f3ff6a5cdd)] 工作流: :railway_track: 更新 `build` 指令
+- [[`7777a2f`](https://github.com/iTonyYo/latest-gitignore/commit/7777a2f9f827b3b461e159f2e4af4d8058ad5016)] 配置: :wrench: 变更更新日志模板
 ## [v1.0.2](https://github.com/iTonyYo/latest-gitignore/compare/v1.0.1...v1.0.2) - 2019-06-21
 
 #### 提交
 
 - [[`0d5b669`](https://github.com/iTonyYo/latest-gitignore/commit/0d5b669cebf61a51427496d8a80b44865bba4578)] 依赖: :package: 升级依赖
+- [[`faa5021`](https://github.com/iTonyYo/latest-gitignore/commit/faa502148bf05f0cfc5aa0f833d26e77766a29a8)] 配置: :wrench: 直接在 `package.json` 文件中配置 `babel`、`eslint`、`auto-changelog`
 - [[`78eeea4`](https://github.com/iTonyYo/latest-gitignore/commit/78eeea4f460c79ee9ea26277c4d8dda8e0d50244)] 配置: :wrench: 将证书列表迁移至 `./doc` 目录下
+- [[`8ac9057`](https://github.com/iTonyYo/latest-gitignore/commit/8ac9057919de0536226f5b8680a1f92383737d62)] 发版: :bookmark: v1.0.2
 - [[`79baa27`](https://github.com/iTonyYo/latest-gitignore/commit/79baa27cf974f7d7aec40aa56b3b8f4a3669675c)] 工作流: :railway_track: 更新 `.gitignore`
 - [[`cd59c12`](https://github.com/iTonyYo/latest-gitignore/commit/cd59c122892426ff78e2f0ae3ee2bee23f1287a0)] 文档: :memo: 更新 README.md
 - [[`f26a755`](https://github.com/iTonyYo/latest-gitignore/commit/f26a755134c4d4dcee32bd7afa1eca1708f8a874)] 文档: :memo: 添加软件包质量徽章
+- [[`7d95b95`](https://github.com/iTonyYo/latest-gitignore/commit/7d95b956519933ee917339b941177dd7b5b20e4b)] 配置: :wrench: 更新 `VS Code` 配置
 ## [v1.0.1](https://github.com/iTonyYo/latest-gitignore/compare/v1.0.0...v1.0.1) - 2019-04-12
 
 #### 提交
