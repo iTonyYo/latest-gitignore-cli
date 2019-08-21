@@ -1,11 +1,11 @@
 {
   "bin": {
-    "latest-gitignore": "esm/cli.js"
+    "latest-gitignore": "esm/main.js"
   },
   "main": "esm/latestGitignore.js",
   "scripts": {
     "start": "DEBUG=LG:* npx babel-node ./dev",
-    "cli": "yarn build > /dev/null && DEBUG=LG:* npx babel-node ./esm/cli macOS Windows Linux Node VisualStudioCode SublimeText CVS Diff Vim TortoiseGit -o .",
+    "cli": "yarn build > /dev/null && DEBUG=LG:* npx babel-node ./esm/main.js -o .",
     "build": "npx babel-node ./scripts/clean-built && npx babel-node ./scripts/build",
     "clean": "npx babel-node ./scripts/clean",
     "license": "npx babel-node ./scripts/license",

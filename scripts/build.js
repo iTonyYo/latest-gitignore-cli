@@ -13,7 +13,7 @@ async function run() {
     return;
   }, { concurrency: 8 });
 
-  await execa('chmod', ['+x', resolveCwd('esm/cli.js')]);
+  await execa('chmod', ['+x', resolveCwd('esm/main.js')]);
 
   console.log(chalk `{greenBright 构建成功!}`);
 }
