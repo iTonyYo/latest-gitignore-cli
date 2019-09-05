@@ -152,6 +152,12 @@ git commit -m '新功能: :tada: 一个新功能' -m '初始提交首页'
 监控: :chart_with_upwards_trend:
 ```
 
+**配置**
+```shell
+# 增 / 删 / 改 / 弃用配置
+配置: :wrench:
+```
+
 **依赖**
 ```shell
 # 移除依赖
