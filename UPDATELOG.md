@@ -1,5 +1,13 @@
 # [`@oopsunome/latest-gitignore`][@oopsunome/latest-gitignore] 更新日志
 
+## [v1.1.1](https://github.com/iTonyYo/latest-gitignore/compare/v1.1.0...v1.1.1) - 2019-10-12
+
+#### 提交
+
+- [[`f3c1d0e`](https://github.com/iTonyYo/latest-gitignore/commit/f3c1d0e5566cc5430b3baf8c205f715111305e70)] 依赖: :arrow_up: 升级依赖
+- [[`89725df`](https://github.com/iTonyYo/latest-gitignore/commit/89725dff8f75b2a25ec6d58a8e0261baa7a975a5)] 依赖: :arrow_up: 升级依赖
+- [[`e80aa85`](https://github.com/iTonyYo/latest-gitignore/commit/e80aa85f2dca3a00a09b62f9490f41a8c8477d23)] 体验: :children_crossing: 减小包体积，提升包下载效率
+- [[`b9211c4`](https://github.com/iTonyYo/latest-gitignore/commit/b9211c405a1d91ef52c25358273f841b1f53a3fc)] 文档: :memo: 新增 `配置: :wrench:` 提交主题
 ## [v1.1.0](https://github.com/iTonyYo/latest-gitignore/compare/v1.0.2...v1.1.0) - 2019-08-21
 
 ### 混合
@@ -11,16 +19,13 @@
 
 - [[`a06b76d`](https://github.com/iTonyYo/latest-gitignore/commit/a06b76d42144a2fe48c1216a5d9ff028b1cc4796)] 依赖: :package: 升级依赖
 - [[`9908998`](https://github.com/iTonyYo/latest-gitignore/commit/9908998d679628213849b647be03d7842dd68a48)] 依赖: :arrow_up: 更新依赖
-- [[`f3c1d0e`](https://github.com/iTonyYo/latest-gitignore/commit/f3c1d0e5566cc5430b3baf8c205f715111305e70)] 依赖: :arrow_up: 升级依赖
 - [[`31d9328`](https://github.com/iTonyYo/latest-gitignore/commit/31d93280132578e752a8c29cab052f51ab52feee)] 重构: :recycle: OO 化 `./src/cli.js` && 优选原生工具函数
-- [[`89725df`](https://github.com/iTonyYo/latest-gitignore/commit/89725dff8f75b2a25ec6d58a8e0261baa7a975a5)] 依赖: :arrow_up: 升级依赖
 - [[`f8846fc`](https://github.com/iTonyYo/latest-gitignore/commit/f8846fca65806c9c959c112a55d11eb1c4189aa9)] 文档: :memo: 更新 README.md
 - [[`5281729`](https://github.com/iTonyYo/latest-gitignore/commit/528172908e58ec8741af8fbec4fa998376251f4d)] 工作流: :railway_track: 更新 `yarn cli` 指令
 - [[`69b1c24`](https://github.com/iTonyYo/latest-gitignore/commit/69b1c24c37dec070f5c93d75ad075e896f824748)] 文档: :memo: 更新 `git` 提交指南
 - [[`ebb135e`](https://github.com/iTonyYo/latest-gitignore/commit/ebb135e706c3db384ebdec5d806c250abe75bbff)] 配置: :wrench: 新增 `Code Climate` 配置
 - [[`19db5cf`](https://github.com/iTonyYo/latest-gitignore/commit/19db5cf9c980fc0620f1c8cf597c06c6775a7062)] 配置: :wrench: 更新 `.gitignore` 配置
 - [[`fc97b57`](https://github.com/iTonyYo/latest-gitignore/commit/fc97b572c46044298dbf0f505d44d3f3ff6a5cdd)] 工作流: :railway_track: 更新 `build` 指令
-- [[`b9211c4`](https://github.com/iTonyYo/latest-gitignore/commit/b9211c405a1d91ef52c25358273f841b1f53a3fc)] 文档: :memo: 新增 `配置: :wrench:` 提交主题
 - [[`7777a2f`](https://github.com/iTonyYo/latest-gitignore/commit/7777a2f9f827b3b461e159f2e4af4d8058ad5016)] 配置: :wrench: 变更更新日志模板
 ## [v1.0.2](https://github.com/iTonyYo/latest-gitignore/compare/v1.0.1...v1.0.2) - 2019-06-21
 
