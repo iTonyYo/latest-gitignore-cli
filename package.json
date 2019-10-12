@@ -19,7 +19,6 @@
     "node": ">=10.13.0"
   },
   "files": [
-    "src/**/*.js",
     "esm/**/*.js"
   ],
   "name": "@oopsunome/latest-gitignore",
@@ -149,7 +148,7 @@
     }
   },
   "auto-changelog": {
-    "output": "CHANGELOG.md",
+    "output": "UPDATELOG.md",
     "template": "changelog-template.hbs",
     "unreleased": true,
     "commitLimit": false,

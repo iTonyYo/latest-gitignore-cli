@@ -11,13 +11,16 @@
 
 - [[`a06b76d`](https://github.com/iTonyYo/latest-gitignore/commit/a06b76d42144a2fe48c1216a5d9ff028b1cc4796)] 依赖: :package: 升级依赖
 - [[`9908998`](https://github.com/iTonyYo/latest-gitignore/commit/9908998d679628213849b647be03d7842dd68a48)] 依赖: :arrow_up: 更新依赖
+- [[`f3c1d0e`](https://github.com/iTonyYo/latest-gitignore/commit/f3c1d0e5566cc5430b3baf8c205f715111305e70)] 依赖: :arrow_up: 升级依赖
 - [[`31d9328`](https://github.com/iTonyYo/latest-gitignore/commit/31d93280132578e752a8c29cab052f51ab52feee)] 重构: :recycle: OO 化 `./src/cli.js` && 优选原生工具函数
+- [[`89725df`](https://github.com/iTonyYo/latest-gitignore/commit/89725dff8f75b2a25ec6d58a8e0261baa7a975a5)] 依赖: :arrow_up: 升级依赖
 - [[`f8846fc`](https://github.com/iTonyYo/latest-gitignore/commit/f8846fca65806c9c959c112a55d11eb1c4189aa9)] 文档: :memo: 更新 README.md
 - [[`5281729`](https://github.com/iTonyYo/latest-gitignore/commit/528172908e58ec8741af8fbec4fa998376251f4d)] 工作流: :railway_track: 更新 `yarn cli` 指令
 - [[`69b1c24`](https://github.com/iTonyYo/latest-gitignore/commit/69b1c24c37dec070f5c93d75ad075e896f824748)] 文档: :memo: 更新 `git` 提交指南
 - [[`ebb135e`](https://github.com/iTonyYo/latest-gitignore/commit/ebb135e706c3db384ebdec5d806c250abe75bbff)] 配置: :wrench: 新增 `Code Climate` 配置
 - [[`19db5cf`](https://github.com/iTonyYo/latest-gitignore/commit/19db5cf9c980fc0620f1c8cf597c06c6775a7062)] 配置: :wrench: 更新 `.gitignore` 配置
 - [[`fc97b57`](https://github.com/iTonyYo/latest-gitignore/commit/fc97b572c46044298dbf0f505d44d3f3ff6a5cdd)] 工作流: :railway_track: 更新 `build` 指令
+- [[`b9211c4`](https://github.com/iTonyYo/latest-gitignore/commit/b9211c405a1d91ef52c25358273f841b1f53a3fc)] 文档: :memo: 新增 `配置: :wrench:` 提交主题
 - [[`7777a2f`](https://github.com/iTonyYo/latest-gitignore/commit/7777a2f9f827b3b461e159f2e4af4d8058ad5016)] 配置: :wrench: 变更更新日志模板
 ## [v1.0.2](https://github.com/iTonyYo/latest-gitignore/compare/v1.0.1...v1.0.2) - 2019-06-21
 
@@ -26,7 +29,6 @@
 - [[`0d5b669`](https://github.com/iTonyYo/latest-gitignore/commit/0d5b669cebf61a51427496d8a80b44865bba4578)] 依赖: :package: 升级依赖
 - [[`faa5021`](https://github.com/iTonyYo/latest-gitignore/commit/faa502148bf05f0cfc5aa0f833d26e77766a29a8)] 配置: :wrench: 直接在 `package.json` 文件中配置 `babel`、`eslint`、`auto-changelog`
 - [[`78eeea4`](https://github.com/iTonyYo/latest-gitignore/commit/78eeea4f460c79ee9ea26277c4d8dda8e0d50244)] 配置: :wrench: 将证书列表迁移至 `./doc` 目录下
-- [[`8ac9057`](https://github.com/iTonyYo/latest-gitignore/commit/8ac9057919de0536226f5b8680a1f92383737d62)] 发版: :bookmark: v1.0.2
 - [[`79baa27`](https://github.com/iTonyYo/latest-gitignore/commit/79baa27cf974f7d7aec40aa56b3b8f4a3669675c)] 工作流: :railway_track: 更新 `.gitignore`
 - [[`cd59c12`](https://github.com/iTonyYo/latest-gitignore/commit/cd59c122892426ff78e2f0ae3ee2bee23f1287a0)] 文档: :memo: 更新 README.md
 - [[`f26a755`](https://github.com/iTonyYo/latest-gitignore/commit/f26a755134c4d4dcee32bd7afa1eca1708f8a874)] 文档: :memo: 添加软件包质量徽章
@@ -38,7 +40,6 @@
 - [[`a61fb69`](https://github.com/iTonyYo/latest-gitignore/commit/a61fb693dcfbcf57624b0781ea508ebf981ea091)] 依赖: :package: 升级依赖
 - [[`5be22ef`](https://github.com/iTonyYo/latest-gitignore/commit/5be22ef5c275ff4512a6fbd2cd088d64eb74f4a0)] 文档: :memo: 将 Git 提交指南从 CONTRIBUTING.md 中分离到 `./doc` 目录下
 - [[`bde756e`](https://github.com/iTonyYo/latest-gitignore/commit/bde756e94f88e9c5141465952721e72811324257)] 工作流: :railway_track: 更新 VS Code 编辑器配置
-- [[`b2b647b`](https://github.com/iTonyYo/latest-gitignore/commit/b2b647b07c1cb8902c57ede44ba4aa6b6cadfb4e)] 发版: :bookmark: v1.0.1
 - [[`c4fc0f2`](https://github.com/iTonyYo/latest-gitignore/commit/c4fc0f244297d855a3606107c2bfc3bde693cabb)] 功能: :gear: 支持传递 `-V` 参数获取版本号
 - [[`648d543`](https://github.com/iTonyYo/latest-gitignore/commit/648d543a5e8766b8c214c78139f89bac776e3232)] 工作流: :railway_track: 增加若干提交主题
 ## v1.0.0 - 2019-01-24
