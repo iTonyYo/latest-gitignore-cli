@@ -1,4 +1,4 @@
-[![Package Quality](https://npm.packagequality.com/shield/@oopsunome/latest-gitignore.svg)](https://packagequality.com/#?package=@oopsunome/latest-gitignore)
+[![Package Quality](https://npm.packagequality.com/shield/@oopsunome%2Flatest-gitignore.svg)](https://packagequality.com/#?package=@oopsunome/latest-gitignore)
 
 # `@oopsunome/latest-gitignore`
 
