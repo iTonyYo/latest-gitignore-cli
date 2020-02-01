@@ -53,8 +53,8 @@
     "meow": "^5.0.0",
     "p-map": "^3.0.0",
     "redent": "^3.0.0",
-    "snyk": "^1.234.2",
-    "update-notifier": "^3.0.1",
+    "snyk": "^1.290.1",
+    "update-notifier": "^4.0.0",
     "write-file-atomic": "^3.0.0"
   },
   "private": false,
