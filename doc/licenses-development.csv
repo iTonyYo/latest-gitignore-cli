@@ -81,7 +81,7 @@
 "@babel/template@7.8.6","MIT","https://github.com/babel/babel/tree/master/packages/babel-template"
 "@babel/traverse@7.9.5","MIT","https://github.com/babel/babel/tree/master/packages/babel-traverse"
 "@babel/types@7.9.5","MIT","https://github.com/babel/babel/tree/master/packages/babel-types"
-"@oopsunome/latest-gitignore@1.2.0","MIT","https://github.com/iTonyYo/latest-gitignore"
+"latest-gitignore-cli@1.2.0","MIT","https://github.com/iTonyYo/latest-gitignore-cli"
 "@rollup/plugin-json@4.0.3","MIT","https://github.com/rollup/plugins"
 "@rollup/pluginutils@3.0.9","MIT","https://github.com/rollup/plugins"
 "@samverschueren/stream-to-observable@0.3.0","MIT","https://github.com/SamVerschueren/stream-to-observable"

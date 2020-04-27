@@ -52,8 +52,8 @@ class Cli {
   async run() {
     if (isEmpty(this.userDefinedConfig)) {
       console.log(redent(chalk`
-        {red.bold 检测到您未提供所需模板，\`latest-gitignore\` 不得不中止。}
-        {grey 建议运行 \`latest-gitignore --help\` 来获取使用帮助。}
+        {red.bold 检测到您未提供所需模板，\`latest-gitignore-cli\` 不得不中止。}
+        {grey 建议运行 \`latest-gitignore-cli --help\` 来获取使用帮助。}
       `, 2));
 
       return;

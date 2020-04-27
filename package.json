@@ -1,8 +1,7 @@
 {
   "bin": {
-    "latest-gitignore": "esm/main.js"
+    "latest-gitignore": "lib/index.js"
   },
-  "main": "lib/index.js",
   "scripts": {
     "start": "yarn build > /dev/null && DEBUG=LG:* ./lib/index.js --help",
     "build": "npx babel-node ./scripts/clean-built && npx babel-node ./scripts/pack",
@@ -18,9 +17,9 @@
     "node": ">=12"
   },
   "files": [
-    "esm/**/*.js"
+    "lib/**/*.js"
   ],
-  "name": "@oopsunome/latest-gitignore",
+  "name": "latest-gitignore-cli",
   "description": "添加 / 更新 `.gitignore`。直接从 `github/gitignore·` 项目 `master` 分支获取模板，而非 `gitignore.io`。",
   "gitignore": [
     "macOS",
@@ -93,20 +92,6 @@
     "oopsunome"
   ],
   "version": "1.2.0",
-  "author": {
-    "name": "iyowei",
-    "email": "swzyocowboy@icloud.com",
-    "url": "https://github.com/iTonyYo"
-  },
-  "repository": {
-    "url": "git@github.com:iTonyYo/latest-gitignore.git",
-    "type": "git"
-  },
-  "homepage": "https://github.com/iTonyYo/latest-gitignore",
-  "bugs": "https://github.com/iTonyYo/latest-gitignore/issues",
-  "publishConfig": {
-    "access": "public"
-  },
   "license": "MIT",
   "babel": {
     "presets": [
@@ -160,5 +145,19 @@
       "develop"
     ]
   },
-  "snyk": true
+  "snyk": true,
+  "author": {
+    "name": "iyowei",
+    "email": "swzyocowboy@icloud.com",
+    "url": "https://github.com/iTonyYo"
+  },
+  "repository": {
+    "url": "git@github.com:iTonyYo/latest-gitignore-cli.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/iTonyYo/latest-gitignore-cli",
+  "bugs": "https://github.com/iTonyYo/latest-gitignore-cli/issues",
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -1,4 +1,4 @@
-[![Package Quality](https://npm.packagequality.com/shield/@oopsunome%2Flatest-gitignore.svg)](https://packagequality.com/#?package=@oopsunome/latest-gitignore)
+[![Package Quality](https://npm.packagequality.com/shield/latest-gitignore-cli.svg)](https://packagequality.com/#?package=latest-gitignore-cli)
 
 # $ latest-gitignore <主题> <...> 选项 [...]
 
@@ -18,14 +18,14 @@
 
 ## 安装
 
-在全局系统环境下使用的话，需要先全局安装 [@oopsunome/latest-gitignore][@oopsunome/latest-gitignore]，
+在全局系统环境下使用的话，需要先全局安装 [latest-gitignore-cli][latest-gitignore-cli]，
 
 ```shell
 # 使用 NPM
-$ npm i -g @oopsunome/latest-gitignore
+$ npm i -g latest-gitignore-cli
 
 # 使用 Yarn
-$ yarn global add @oopsunome/latest-gitignore
+$ yarn global add latest-gitignore-cli
 ```
 
 ## 使用
@@ -52,7 +52,7 @@ $ 使用方式
 
 **安装依赖**
 
-[`@oopsunome/latest-gitignore`][@oopsunome/latest-gitignore] 使用 [`Yarn`](https://yarnpkg.com/zh-Hans/) 包管理器，执行 `yarn install` 安装依赖。
+[`latest-gitignore-cli`][latest-gitignore-cli] 使用 [`Yarn`](https://yarnpkg.com/zh-Hans/) 包管理器，执行 `yarn install` 安装依赖。
 
 **运行**
 
@@ -78,11 +78,11 @@ yarn test
 
 ## 证书
 
-[`@oopsunome/latest-gitignore`][@oopsunome/latest-gitignore] 获得了 MIT 许可，仔细查阅 [LICENSE.md][证书] 以了解详情。
+[`latest-gitignore-cli`][latest-gitignore-cli] 获得了 MIT 许可，仔细查阅 [LICENSE.md][证书] 以了解详情。
 
-[贡献指南]: https://github.com/iTonyYo/latest-gitignore/blob/master/CONTRIBUTING.md
-[证书]: https://github.com/iTonyYo/latest-gitignore/blob/master/LICENSE.md
-[@oopsunome/latest-gitignore]: https://github.com/iTonyYo/latest-gitignore
+[贡献指南]: https://github.com/iTonyYo/latest-gitignore-cli/blob/master/CONTRIBUTING.md
+[证书]: https://github.com/iTonyYo/latest-gitignore-cli/blob/master/LICENSE.md
+[latest-gitignore-cli]: https://github.com/iTonyYo/latest-gitignore-cli
 [SETUP.md]: #
 [github/gitignore]: https://github.com/github/gitignore
 [@oopsunome/fast-gitignore]: https://github.com/iTonyYo/fast-gitignore

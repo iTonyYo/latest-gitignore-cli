@@ -4,9 +4,9 @@
 - [行为准则](#行为准则)
 - [不同的贡献方式](#不同的贡献方式)
 
-首先，感谢你考虑为 [`latest-gitignore`][latest-gitignore] 做出贡献！正是像您这样的人，使得 [`latest-gitignore`][latest-gitignore] 成为一个更好的工具。:tada::+1:
+首先，感谢你考虑为 [`latest-gitignore-cli`][latest-gitignore-cli] 做出贡献！正是像您这样的人，使得 [`latest-gitignore-cli`][latest-gitignore-cli] 成为一个更好的工具。:tada::+1:
 
-[latest-gitignore]: https://github.com/iTonyYo/latest-gitignore
+[latest-gitignore-cli]: https://github.com/iTonyYo/latest-gitignore-cli
 
 遵循这些原则有助于传达您对其它开发人员时间上的尊重。作为回报，他们会及时解决您的问题、评估更改和帮助您最终确定拉取请求等方面。
 
