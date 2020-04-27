@@ -3,7 +3,6 @@
   "search.maintainFileSearchCache": true,
   "search.showLineNumbers": true,
   "search.smartCase": true,
-  "search.usePCRE2": true,
   "window.zoomLevel": 0,
   "zenMode.restore": true,
   "gitlens.advanced.messages": {
@@ -47,7 +46,7 @@
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.labelFormat": "medium",
   "workbench.editor.tabCloseButton": "left",
-  "workbench.colorTheme": "Quiet Light",
+  "workbench.colorTheme": "Abyss",
   "workbench.statusBar.visible": false,
   "javascript.validate.enable": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
