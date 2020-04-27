@@ -1,5 +1,18 @@
 # [`@oopsunome/latest-gitignore`][@oopsunome/latest-gitignore] 更新日志
 
+## [v1.2.0](https://github.com/iTonyYo/latest-gitignore/compare/v1.1.1...v1.2.0) - 2020-04-27
+
+#### 提交
+
+- [[`c02854e`](https://github.com/iTonyYo/latest-gitignore/commit/c02854e3aa94d47e148ab736c9cff05c04ea6fba)] 依赖: :arrow_up: 升级依赖
+- [[`9f632ec`](https://github.com/iTonyYo/latest-gitignore/commit/9f632ec38bd58c208ecf17cb1faeab6d58231bc8)] 工作流: :railway_track: 使用 Rollup 进行生产构建
+- [[`1f80d84`](https://github.com/iTonyYo/latest-gitignore/commit/1f80d84434cc612fbebcb788c8556587a60292f9)] 体验: :children_crossing: 检测到您未提供所需模板时，中止 `latest-gitignore`
+- [[`7af3709`](https://github.com/iTonyYo/latest-gitignore/commit/7af3709979b20a3751b0eac506537d0ec45bd402)] 配置: :wrench: 更新 .gitignore
+- [[`d8cd264`](https://github.com/iTonyYo/latest-gitignore/commit/d8cd264942e74efab422dd584695ad8f34094745)] 配置: :wrench: 更新 .codeclimate.yml
+- [[`f20d16b`](https://github.com/iTonyYo/latest-gitignore/commit/f20d16b609e226f1f089e710896cae681a429061)] 配置: :wrench: 更新 VSCode 配置
+- [[`7f7a391`](https://github.com/iTonyYo/latest-gitignore/commit/7f7a391ab3e8ce8972be4f4842a8ba906a568bdf)] 配置: :wrench: 更新 .nvmrc
+- [[`6d67ef8`](https://github.com/iTonyYo/latest-gitignore/commit/6d67ef8264fa1aec6bdaf6ad6598f21acca67274)] 配置: :wrench: 更新 .codeclimate.yml
+- [[`2d9fbfd`](https://github.com/iTonyYo/latest-gitignore/commit/2d9fbfdd687dedbd5a210cbc07316a3ac05c7db8)] 文档: :memo: 更新包质量徽章图片资源
 ## [v1.1.1](https://github.com/iTonyYo/latest-gitignore/compare/v1.1.0...v1.1.1) - 2019-10-12
 
 #### 提交
