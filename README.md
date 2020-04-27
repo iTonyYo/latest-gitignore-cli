@@ -1,4 +1,4 @@
-[![Package Quality](https://npm.packagequality.com/shield/latest-gitignore-cli.svg)](https://packagequality.com/#?package=latest-gitignore-cli)
+[![Package Quality](https://npm.packagequality.com/shield/latest-gitignore-cli.svg)](https://packagequality.com/#?package=latest-gitignore-cli) [![Known Vulnerabilities](https://snyk.io/test/github/iTonyYo/latest-gitignore/badge.svg?targetFile=package.json)](https://snyk.io/test/github/iTonyYo/latest-gitignore?targetFile=package.json)
 
 # $ latest-gitignore <主题> <...> 选项 [...]
 
