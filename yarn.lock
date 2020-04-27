@@ -945,9 +945,9 @@
   integrity sha512-nI7ELxukf7pT4/VraL4iabtNNMz8mUo7EXlqCFld8O5z6mIMLX9llps24iPpaIZOwArkY3FWA+4t+ixyvtTSIA==
 
 "@snyk/java-call-graph-builder@^1.3.4":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@snyk/java-call-graph-builder/-/java-call-graph-builder-1.4.0.tgz#95ee5fd6b8f78d61b47275d5414e033941476a94"
-  integrity sha512-trqI8w9yMjAEeg+toWO1m/YsCJJSREP8KJnxNjBnSBhVKl/4vwSRlKXaYcd4ftQR5otrbJQsd/9+3OSWcfuKeQ==
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@snyk/java-call-graph-builder/-/java-call-graph-builder-1.5.0.tgz#28aac5e56e0b1d453c6c06ac08f2980e5b93e3fe"
+  integrity sha512-Uww7BRUKZiZPcJT70g3zxON9zNZcD8Enbm9vyaLnwLq0NOS4D9FypKiPTKSdwlGLDB3Y2GtIiEUHoV6krhMOJw==
   dependencies:
     ci-info "^2.0.0"
     debug "^4.1.1"
@@ -1623,9 +1623,9 @@ cache-manager@^3.2.1:
     lru-cache "4.0.0"
 
 cacheable-lookup@^4.1.1:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/cacheable-lookup/-/cacheable-lookup-4.2.0.tgz#24a725d2a9cf6822c0cc6c0ea66d1fe16edd87ae"
-  integrity sha512-57vpIhK+mpViWMgY65nly7pgofA9x8yebdVc+y4Vwu8S8Wunx/iru5ieIlD4QyaIAXBJIqI+ONsSU8guxr02iQ==
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/cacheable-lookup/-/cacheable-lookup-4.2.1.tgz#3449825d21b971e7971c4fd42b89522deb3a6d7f"
+  integrity sha512-DqtvWnUbBJgpOvgYctguN4jl36gjAZIQ/BjnSMsiK8/ubm1XIqi5qn40PRoyqaPAVZccXrwB+75Mhubcr5v+5A==
 
 cacheable-request@^6.0.0:
   version "6.1.0"
@@ -5814,7 +5814,7 @@ snyk-try-require@1.3.1, snyk-try-require@^1.1.1, snyk-try-require@^1.3.1:
     lru-cache "^4.0.0"
     then-fs "^2.0.0"
 
-snyk@^1.312.0:
+snyk@^1.313.0:
   version "1.313.0"
   resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.313.0.tgz#d2a6bd1d11658b8a42b8dff94626f9625325ce72"
   integrity sha512-Y85VlAESWTlNmOB4MOzp8FXA7D817IkPYx9Hn9IPy6od+4ApmvSGXuGAmOI6SpxWCzZAU+EjbQo/gdknqD7hqA==
