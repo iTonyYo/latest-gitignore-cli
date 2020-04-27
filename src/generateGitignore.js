@@ -46,6 +46,9 @@ export default async (needs, to) => {
     log('远程获取下载列表');
 
     const allDownloadUrls = await getTemplatesAllUrls();
+
+    log(`获取到 ${allDownloadUrls.length} 个模板`);
+
     const targets = await getTemplatesNeededUrls(
       allDownloadUrls,
       needs,

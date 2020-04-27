@@ -14,7 +14,7 @@ const log = debug('LG:log');
  * @param {Array} needs - 需被 Git 忽略的内容主题
  * @param {String} to - `.gitignore` 文件存储位置
  */
-export default async (needs, to) => {
+export default async ({ needs = [], to = '.' }) => {
   if (!(await dirExists(to))) {
     throw Error('保存位置必须有效');
   }

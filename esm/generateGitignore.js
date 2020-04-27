@@ -58,6 +58,7 @@ var _default = async (needs, to) => {
   if ((0, _isEmpty.default)(cacheDownloadList)) {
     log('远程获取下载列表');
     const allDownloadUrls = await (0, _getTemplatesAllUrls.default)();
+    log(`获取到 ${allDownloadUrls.length} 个模板`);
     const targets = await (0, _getTemplatesNeededUrls.default)(allDownloadUrls, needs);
     log(`待下载 ${targets.length} 个模板`);
     const sc = pCacheSet('allDownloadUrls', allDownloadUrls);

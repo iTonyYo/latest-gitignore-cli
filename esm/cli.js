@@ -14,7 +14,9 @@ var _chalk = _interopRequireDefault(require("chalk"));
 
 var _redent = _interopRequireDefault(require("redent"));
 
-var _cosmiconfig = _interopRequireDefault(require("cosmiconfig"));
+var _cosmiconfig = require("cosmiconfig");
+
+var _debug = _interopRequireDefault(require("debug"));
 
 var _isEmpty = _interopRequireDefault(require("./utilities/isEmpty"));
 
@@ -63,11 +65,24 @@ class Cli {
     });
     this.workingPath = (0, _getWorkingDirectory.default)(this.cli.input[0]).twd;
     this.userDefinedConfig = this.getUserDefinedConfig();
+    this.log = (0, _debug.default)('LG:log');
   }
 
   async run() {
-    const rslt = await (0, _latestGitignore.default)(this.getSelectedTemplatesByName(), this.getDest());
-    console.log((0, _redent.default)(_chalk.default`
+    if ((0, _isEmpty.default)(this.userDefinedConfig)) {
+      console.log((0, _redent.default)((0, _chalk.default)`
+        {red.bold 检测到您未提供所需模板，\`latest-gitignore\` 不得不中止。}
+        {grey 建议运行 \`latest-gitignore --help\` 来获取使用帮助。}
+      `, 2));
+      return;
+    }
+
+    this.log('您已声明所需模板');
+    const rslt = await (0, _latestGitignore.default)({
+      needs: this.getSelectedTemplatesByName(),
+      to: this.getDest()
+    });
+    console.log((0, _redent.default)((0, _chalk.default)`
       {green.bold ${rslt.message}}
       {grey ${rslt.out}}
     `, 2));
@@ -102,8 +117,8 @@ class Cli {
   }
 
   getUserDefinedConfig() {
-    const explorer = (0, _cosmiconfig.default)('gitignore');
-    const foundConfig = explorer.searchSync(this.workingPath);
+    const explorerSync = (0, _cosmiconfig.cosmiconfigSync)('gitignore');
+    const foundConfig = explorerSync.search(this.workingPath);
     return (0, _isEmpty.default)(foundConfig) ? {} : (0, _get.default)(foundConfig, 'config');
   }
 

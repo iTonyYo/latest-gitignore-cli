@@ -25,7 +25,10 @@ const log = (0, _debug.default)('LG:log');
  * @param {String} to - `.gitignore` 文件存储位置
  */
 
-var _default = async (needs, to) => {
+var _default = async ({
+  needs = [],
+  to = '.'
+}) => {
   if (!(await (0, _dirExists.default)(to))) {
     throw Error('保存位置必须有效');
   }

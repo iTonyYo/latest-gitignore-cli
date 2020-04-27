@@ -4,7 +4,8 @@ import meow from 'meow';
 import updateNotifier from 'update-notifier';
 import chalk from 'chalk';
 import redent from 'redent';
-import cosmiconfig from 'cosmiconfig';
+import { cosmiconfigSync } from 'cosmiconfig';
+import debug from 'debug';
 
 import isEmpty from './utilities/isEmpty';
 import pkg from '../package.json';
@@ -47,13 +48,25 @@ class Cli {
 
     this.workingPath = getWorkingDirectory(this.cli.input[0]).twd;
     this.userDefinedConfig = this.getUserDefinedConfig();
+    this.log = debug('LG:log');
   }
 
   async run() {
-    const rslt = await latestGitignore(
-      this.getSelectedTemplatesByName(),
-      this.getDest(),
-    );
+    if (isEmpty(this.userDefinedConfig)) {
+      console.log(redent(chalk`
+        {red.bold 检测到您未提供所需模板，\`latest-gitignore\` 不得不中止。}
+        {grey 建议运行 \`latest-gitignore --help\` 来获取使用帮助。}
+      `, 2));
+
+      return;
+    }
+
+    this.log('您已声明所需模板');
+
+    const rslt = await latestGitignore({
+      needs: this.getSelectedTemplatesByName(),
+      to: this.getDest(),
+    });
 
     console.log(redent(chalk`
       {green.bold ${rslt.message}}
@@ -61,7 +74,6 @@ class Cli {
     `, 2));
   }
 
-  // 待办： 是否提示 "必须提供需要被 Git 忽略的内容主题"
   getSelectedTemplatesByName() {
     const { input } = this.cli;
 
@@ -84,8 +96,8 @@ class Cli {
   }
 
   getUserDefinedConfig() {
-    const explorer = cosmiconfig('gitignore');
-    const foundConfig = explorer.searchSync(this.workingPath);
+    const explorerSync = cosmiconfigSync('gitignore');
+    const foundConfig = explorerSync.search(this.workingPath);
 
     return isEmpty(foundConfig) ? {} : get(foundConfig, 'config');
   }
