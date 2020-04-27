@@ -15,6 +15,7 @@ exclude_patterns:
 - ".codeclimate.yml"
 - "changelog-template.hbs"
 - "CHANGELOG.md"
+- "UPDATELOG.md"
 - "CODE_OF_CONDUCT.md"
 - "CONTRIBUTING.md"
 - "example.gif"
@@ -23,3 +24,4 @@ exclude_patterns:
 - "README.md"
 - "yarn.lock"
 - ".mailmap"
+- ".synk"
