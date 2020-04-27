@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import Cli from './cli';
 
 (async () => {

@@ -8,4 +8,5 @@ module.exports = {
   appDirectory,
   resolveCwd,
   docs: resolveCwd('doc'),
+  srcRollupEntryPath: resolveCwd('src/index.js'),
 };

@@ -3,4 +3,5 @@ import { resolveCwd } from './paths';
 
 trash([
   resolveCwd('esm'),
+  resolveCwd('lib'),
 ]);

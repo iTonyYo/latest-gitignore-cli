@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import meow from 'meow';
 import updateNotifier from 'update-notifier';
 import chalk from 'chalk';
@@ -8,14 +6,14 @@ import { cosmiconfigSync } from 'cosmiconfig';
 import debug from 'debug';
 
 import isEmpty from './utilities/isEmpty';
-import pkg from '../package.json';
+import { name, version } from '../package.json';
 import get from './utilities/get';
 import getWorkingDirectory from './getWorkingDirectory';
 import latestGitignore from './latestGitignore';
 
 class Cli {
   constructor() {
-    updateNotifier({ pkg }).notify();
+    updateNotifier({ pkg: { name, version } }).notify();
 
     this.cli = meow(`
       使用方式

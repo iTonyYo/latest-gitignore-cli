@@ -2,11 +2,10 @@
   "bin": {
     "latest-gitignore": "esm/main.js"
   },
-  "main": "esm/latestGitignore.js",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "DEBUG=LG:* npx babel-node ./dev",
-    "cli": "yarn build > /dev/null && DEBUG=LG:* npx babel-node ./esm/main.js -o .",
-    "build": "npx babel-node ./scripts/clean-built && npx babel-node ./scripts/build",
+    "start": "yarn build > /dev/null && DEBUG=LG:* ./lib/index.js --help",
+    "build": "npx babel-node ./scripts/clean-built && npx babel-node ./scripts/pack",
     "clean": "npx babel-node ./scripts/clean",
     "license": "npx babel-node ./scripts/license",
     "reprepare": "npx babel-node ./scripts/re-prepare",
@@ -63,6 +62,7 @@
     "@babel/core": "^7.9.0",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.5",
+    "@rollup/plugin-json": "^4.0.3",
     "auto-changelog": "^2.0.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-add-module-exports": "^1.0.2",
@@ -73,6 +73,9 @@
     "license-checker": "^25.0.1",
     "listr": "^0.14.3",
     "make-dir": "^3.1.0",
+    "p-series": "^2.1.0",
+    "rollup": "^2.7.2",
+    "rollup-plugin-terser": "^5.3.0",
     "trash": "^6.1.1"
   },
   "keywords": [
