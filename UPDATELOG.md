@@ -1,5 +1,13 @@
 # [`latest-gitignore-cli`][latest-gitignore-cli] 更新日志
 
+## [v1.2.1](https://github.com/iTonyYo/latest-gitignore-cli/compare/v1.2.0...v1.2.1) - 2020-04-27
+
+#### 提交
+
+- [[`0975ca0`](https://github.com/iTonyYo/latest-gitignore-cli/commit/0975ca0deb0b2ee65ef6af3089791ad8e10d466e)] 配置: :wrench: 项目改名为 `latest-gitignore-cli`
+- [[`2cba5a4`](https://github.com/iTonyYo/latest-gitignore-cli/commit/2cba5a4c1534b1e7a4ded45271862228d7a8c046)] 文档: :memo: 更新 README.md
+- [[`42cca6a`](https://github.com/iTonyYo/latest-gitignore-cli/commit/42cca6a8173c5e6ae6d12fa75cb23191cc6906e3)] 配置: :wrench: 取消将包发布在 `@oopsunome` 命名空间下
+- [[`74d86ad`](https://github.com/iTonyYo/latest-gitignore-cli/commit/74d86add928a3f7cc89ec1b629c9abd935c6a5ac)] 配置: :wrench: 需要 node.js &gt;= 12
 ## [v1.2.0](https://github.com/iTonyYo/latest-gitignore-cli/compare/v1.1.1...v1.2.0) - 2020-04-27
 
 #### 提交
@@ -74,4 +82,4 @@
 - [[`a82e401`](https://github.com/iTonyYo/latest-gitignore-cli/commit/a82e4011d4fcda3cf28a348cd0ffe581e761d4d8)] 移除: :fire: 移除无用依赖
 - [[`621914c`](https://github.com/iTonyYo/latest-gitignore-cli/commit/621914c9fb764621c2e475ff5ad5d8cb9ed58356)] 文档: :memo: 更新问题模板
 
-[latest-gitignore-cli]: https://github.com/iTonyYo/latest-gitignore-cli
+[latest-gitignore-cli]: https://github.com/iTonyYo/latest-gitignore-cli-cli
