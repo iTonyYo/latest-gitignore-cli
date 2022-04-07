@@ -36,7 +36,7 @@
     "Patch"
   ],
   "dependencies": {
-    "cache-manager": "^3.2.1",
+    "cache-manager": "^3.4.0",
     "cache-manager-fs": "^1.0.8",
     "callsites": "^3.1.0",
     "camelcase-keys": "^6.2.2",
